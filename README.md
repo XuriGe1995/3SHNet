@@ -51,12 +51,13 @@ To ensure reproducibility, we ran the code again and got similar or even higher 
 
 
 ## Citation
-@article{ge20243shnet,
+```
+  @article{ge20243shnet,
   title={3SHNet: Boosting image-sentence retrieval via visual semantic-spatial self-highlighting},
   author={Ge, Xuri and Xu, Songpei and Chen, Fuhai and Wang, Jie and Wang, Guoxin and An, Shan and Jose, Joemon M},
   journal={Information Processing and Management},
   year={2024},
   publisher={Elsevier}
-}
-
+  }
+```
 Acknowledgement: We referred to the implementations of [vse_infty](https://github.com/woodfrog/vse_infty) and [SCAN](https://github.com/kuanghuei/SCAN) to build up our codebase.
