@@ -1,6 +1,8 @@
 # The official web of the 3SHNet project. 
 [《3SHNet: Boosting Image-Sentence Retrieval via Visual Semantic-Spatial Self-Highlighting》]([https://arxiv.org/abs/2003.08813](https://www.sciencedirect.com/science/article/pii/S0306457324000761)])
+
 by Xuri Ge*, Songpei Xu*, Fuhai Chen#, Jie Wang, Guoxin Wang, Shan An, Joemon M. Jose#
+
 Information Processing and Management (IP&M 2024)
 
 ## Introduction
