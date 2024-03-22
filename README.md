@@ -22,8 +22,8 @@ First, the basic annotations and region-level image features can be downloaded f
 
 For the global-level image features, we implemented the pre-trained REXNet-101 in [grid-feats-vqa](https://github.com/facebookresearch/grid-feats-vqa) to extract all images in MSCOCO and Flickr30K. After that, we stored them in independent .npy files (mainly for MScoco due to the large images).
 
-About segmentation extractions, features are computed with the code provided by [UPSNet](https://github.com/uber-research/UPSNet). They include three types, i.e. segmentation semantic features (`%s_segmentations.npy`), segmentation maps (`%s_seg_maps.npy`) and category-one-hot(`%s_cat_onehots.npy` a little different from paper, it doesn't influence the conclusion).
-Here we provided the segmentation results of the [test set](xxx) as examples, which can also be used to obtain our reported results.
+About segmentation extractions, features are computed with the code provided by [UPSNet](https://github.com/uber-research/UPSNet). They include three types, i.e. segmentation semantic features (`%s_segmentations.npy`, dims=(N,133,7,7)), segmentation maps (`%s_seg_maps.npy`, dims=(N, 64, 64), downsampleing to reduce the calculations) and category-one-hot(`%s_cat_onehots.npy`, dims=(N,133) a little different from paper, which is embedded by a linear layer, it doesn't influence the conclusion).
+Here we provided the segmentation results of the [test set](https://drive.google.com/drive/folders/1lU3I7J8XIquCtQ2lIML9w_9tDdRZWXm4?usp=drive_link) as examples, which can also be used to obtain our reported results.
 
 ## Training
 We separate the global (grid-based) and local (region-based) training processes.
@@ -50,7 +50,7 @@ sh eval_gird_seg_sp_se_coco.sh
 And to obtain the ensemble results, you can refer to the code in `eval_ensemble.py`
 And to obtain the cross-dataset testing results, you can refer to the code in `eval_cross_ensemble.py`
 
-To obtain the reported results, we have released the pre-trained models in [Google Drive](xxx).
+To obtain the reported results, we have released the single region-level and grid-level pre-trained models in [Google Drive](https://drive.google.com/drive/folders/1lU3I7J8XIquCtQ2lIML9w_9tDdRZWXm4?usp=drive_link).
 You should modify the pre-trained model paths in the evaluation codes and then follow the above testing processes.
 To ensure reproducibility, we ran the code again and got similar or even higher results than reported in the paper!
 
