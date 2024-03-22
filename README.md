@@ -17,9 +17,13 @@ conda env create -n 3SHNet --file env.yaml
 
 ## Data Preparation
 To run the code, annotations and region-level and global-level image features with corresponding segmentation results for the MSCOCO and Flickr30K datasets are needed.
+
 First, the basic annotations and region-level image features can be downloaded from [SCN](https://github.com/kuanghuei/SCAN#download-data).
-For the global-level image features, we implemented the pre-trained REXNet-101 in [grid-feats-vqa](https://github.com/facebookresearch/grid-feats-vqa) to extract all images in MSCOCO and Flickr30K and stored them in independent .npy files.
-About segmentation extractions, features are computed with the code provided by [UPSNet](https://github.com/uber-research/UPSNet). Here we provided the segmentation results of the test set as examples, which can also be used to obtain our reported results.
+
+For the global-level image features, we implemented the pre-trained REXNet-101 in [grid-feats-vqa](https://github.com/facebookresearch/grid-feats-vqa) to extract all images in MSCOCO and Flickr30K. After that, we stored them in independent .npy files (mainly for MScoco due to the large images).
+
+About segmentation extractions, features are computed with the code provided by [UPSNet](https://github.com/uber-research/UPSNet). They include three types, i.e. segmentation semantic features (`%s_segmentations.npy`), segmentation maps (`%s_seg_maps.npy`) and category-one-hot(`%s_cat_onehots.npy` a little different from paper, it doesn't influence the conclusion).
+Here we provided the segmentation results of the [test set](xxx) as examples, which can also be used to obtain our reported results.
 
 ## Training
 We separate the global (grid-based) and local (region-based) training processes.
