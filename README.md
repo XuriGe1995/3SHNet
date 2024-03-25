@@ -55,6 +55,7 @@ You should modify the pre-trained model paths in the evaluation codes and then f
 To ensure reproducibility, we ran the code again and got similar or even higher results than reported in the paper!
 ![](pic/reproduced_results.png)
 
+The Global-level results will be uploaded after sorting it out. If you don't mind the untidy code, please email me.
 
 ## Citation
 ```
