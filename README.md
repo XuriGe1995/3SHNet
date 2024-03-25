@@ -53,7 +53,7 @@ And to obtain the cross-dataset testing results, you can refer to the code in `e
 To obtain the reported results, we have released the single region-level and grid-level pre-trained models in [Google Drive](https://drive.google.com/drive/folders/1lU3I7J8XIquCtQ2lIML9w_9tDdRZWXm4?usp=drive_link).
 You should modify the pre-trained model paths in the evaluation codes and then follow the above testing processes.
 To ensure reproducibility, we ran the code again and got similar or even higher results than reported in the paper!
-
+![](pic/reproduced_results.png)
 
 
 ## Citation
