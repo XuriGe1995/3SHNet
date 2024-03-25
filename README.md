@@ -66,4 +66,4 @@ To ensure reproducibility, we ran the code again and got similar or even higher 
   publisher={Elsevier}
   }
 ```
-Acknowledgement: We referred to the implementations of [vse_infty](https://github.com/woodfrog/vse_infty) and [SCAN](https://github.com/kuanghuei/SCAN) to build up our codebase.
+Acknowledgement: We referred to the implementations of [vse_infty](https://github.com/woodfrog/vse_infty) and [SCAN](https://github.com/kuanghuei/SCAN) to build up our codebase, thanks all.
