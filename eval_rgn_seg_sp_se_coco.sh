@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python eval_rgn_seg_sp_se.py --dataset coco --data_path data  #--save_results 
